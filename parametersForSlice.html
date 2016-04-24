@@ -13,7 +13,7 @@
         <h1> Get Your Fair Share</h1>
         <h1> Input parameters</h1>
 
-        <form id = "form" method = "get" action="">	
+        <form id = "form" method = "post" action="/new_url">	
             <label> Radius</label>
             <div class="input-group">
               <input id = "radius" name ="radius" type="text" class="form-control" value="" placeholder="0.00" aria-describedby="basic-addon2"> 
@@ -29,8 +29,8 @@
 
             <label> Number of people </label>
             <div class="input-group">
-              <input id = "people" name ="numPeople" type="text" class="form-control" value="" placeholder="0" aria-describedby="basic-addon2"> <input type ="button" name ="button" value="get size" 
-                       onClick = "finalRes(this.form)">        
+              <input id = "people" name ="numPeople" type="text" class="form-control" value="" placeholder="0" aria-describedby="basic-addon2"> <input type ="submit" name ="button" value="get size" 
+                       onClick = "cutSizePage(this.form)">        
               <span class="input-group-addon" id="basic-addon2">people</span>
             </div>
         </form>
