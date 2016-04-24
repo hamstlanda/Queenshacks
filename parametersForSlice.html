@@ -24,6 +24,7 @@
     <body>
         <div class="jumbotron"> <h1><strong> Get Your Fair Share</strong> (Step 2) </h1> </div>
 
+
         <div class="container">
 
            
@@ -39,32 +40,32 @@
                 <label> Radius</label>
                 <div class="input-group">
                   <input id = "radius" name ="radius" type="text" class="form-control" value="" placeholder="0.00" aria-describedby="basic-addon2"> 
-                    <input type ="button" name ="button" value="click" 
-                           onClick = "radiusRes(this.form)">
+                    
                   <span class="input-group-addon" id="basic-addon2">inches</span>
                 </div>
 
                 <label> Width*</label>
                 <div class="input-group">
-                  <input id = "width" name ="width" type="text" class="form-control" value="" placeholder="0.00" aria-describedby="basic-addon2"> <input type ="button" name ="button" value="click" 
-                           onClick = "widthRes(this.form)">
+                  <input id = "width" name ="width" type="text" class="form-control" value="" placeholder="0.00" aria-describedby="basic-addon2">
                   <span class="input-group-addon" id="basic-addon2">inches</span>
                 </div>
 
+   
+    
+
                 <label> Number of people </label>
             <div class="input-group">
-              <input id = "people" name ="numPeople" type="text" class="form-control" value="" placeholder="0" aria-describedby="basic-addon2">
-                <input type ="button" name ="button" value="click" 
-                       onClick = "peopleRes(this.form)">
-        
+              <input id = "people" name ="numPeople" type="text" class="form-control" value="" placeholder="0" aria-describedby="basic-addon2"> <input type ="submit" name ="button" value="get size" 
+                       onClick = "cutSizePage(this.form)">        
               <span class="input-group-addon" id="basic-addon2">people</span>
             </div>
         </form>
                 
           <div> *Only for slices.</div>
           </div>
-          </div>
-
-    </div>
+              </div>
+                </div>
+            
+        
 	</body>
 </html>
