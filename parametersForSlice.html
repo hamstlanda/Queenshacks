@@ -7,35 +7,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href = "css/bootstrap.css" >
     <link rel="styesheet" href = "css/bootstrap.min">
-        <script type = "text/javascript" src = "js/input.js" ></script>
+    <script type = "text/javascript" src = "js/input.js" ></script>
+    <link rel="stylesheet" href="css/parametersForSlice.css">
+    <style type="text/css">
+    body{
+      background-color:rgb(255,160,162);
+    }
+    form, h1{
+      padding: 0 5% 0 5%;}
+    
+    .container{
+      background-color: #FFF;
+    }
+    </style>
 	</head>
     <body>
-        <h1> Get Your Fair Share</h1>
-        <h1> Input parameters</h1>
+        <div class="jumbotron"> <h1><strong> Get Your Fair Share</strong> (Step 2) </h1> </div>
 
-        <form id = "form" method = "post" action="/new_url">	
-            <label> Radius</label>
-            <div class="input-group">
-              <input id = "radius" name ="radius" type="text" class="form-control" value="" placeholder="0.00" aria-describedby="basic-addon2"> 
-               
-              <span class="input-group-addon" id="basic-addon2">inches</span>
-            </div>
 
-            <label> Width*</label>
-            <div class="input-group">
-              <input id = "width" name ="width" type="text" class="form-control" value="" placeholder="0.00" aria-describedby="basic-addon2">
-              <span class="input-group-addon" id="basic-addon2">inches</span>
-            </div>
+        <div class="container">
 
-            <label> Number of people </label>
+           
+          
+            <div class="row">
+           
+          <div class="col-sm-10">
+            <h1 > Input parameters</h1>
+             <div class="progress">
+           <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"> 50% </div>
+            </div> 
+            <form id = "form" method = "get" action="">	
+                <label> Radius</label>
+                <div class="input-group">
+                  <input id = "radius" name ="radius" type="text" class="form-control" value="" placeholder="0.00" aria-describedby="basic-addon2"> 
+                    
+                  <span class="input-group-addon" id="basic-addon2">inches</span>
+                </div>
+
+                <label> Number of people </label>
             <div class="input-group">
-              <input id = "people" name ="numPeople" type="text" class="form-control" value="" placeholder="0" aria-describedby="basic-addon2"> <input type ="submit" name ="button" value="get size" 
-                       onClick = "cutSizePage(this.form)">        
+              <input id = "people" name ="numPeople" type="text" class="form-control" value="" placeholder="0" aria-describedby="basic-addon2">       
               <span class="input-group-addon" id="basic-addon2">people</span>
-            </div>
+            </div><input type ="submit" name ="button" value="get size" 
+                       onClick = "finalRes(this.form)">  
         </form>
                 
-    <div> *Only for slices.</div>
-
+          
+          </div>
+              </div>
+                </div>
+            
+        
 	</body>
 </html>
