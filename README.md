@@ -1,3 +1,3 @@
 # Queenshacks
 
-Our project is to tell you how to divide food eveny among friends.
+Our project tells you how to divide food evenly among friends.
