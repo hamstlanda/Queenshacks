@@ -7,18 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href = "css/bootstrap.css" >
     <link rel="styesheet" href = "css/bootstrap.min">
-        <!---<script type = "text/javascript" src = "js/input.js" ></script>--->
-      
-        <script language="JavaScript">
-            function testResults (form) {
-                var TestVar = form.numPeople.value;
-                alert ("You typed: " + TestVar);
-            }
-            function widthRes(form){
-                var widthIs = form.width.value;
-                alert("The width is: "+widthIs);
-            }
-        </script>
+        <script type = "text/javascript" src = "js/input.js" ></script>
 	</head>
     <body>
         <h1> Get Your Fair Share</h1>
@@ -27,7 +16,9 @@
         <form id = "form" method = "get" action="">	
             <label> Radius</label>
             <div class="input-group">
-              <input id = "radius" name ="radius" type="text" class="form-control" value="" placeholder="0.00" aria-describedby="basic-addon2">
+              <input id = "radius" name ="radius" type="text" class="form-control" value="" placeholder="0.00" aria-describedby="basic-addon2"> 
+                <input type ="button" name ="button" value="click" 
+                       onClick = "radiusRes(this.form)">
               <span class="input-group-addon" id="basic-addon2">inches</span>
             </div>
 
@@ -42,7 +33,7 @@
             <div class="input-group">
               <input id = "people" name ="numPeople" type="text" class="form-control" value="" placeholder="0" aria-describedby="basic-addon2">
                 <input type ="button" name ="button" value="click" 
-                       onClick = "testResults(this.form)">
+                       onClick = "peopleRes(this.form)">
         
               <span class="input-group-addon" id="basic-addon2">people</span>
             </div>
