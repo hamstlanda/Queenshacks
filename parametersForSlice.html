@@ -7,28 +7,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href = "css/bootstrap.css" >
     <link rel="styesheet" href = "css/bootstrap.min">
+        <!---<script type = "text/javascript" src = "js/input.js" ></script>--->
+        <script>/*var input = document.getElementById("radius");
+            
+function showInput(form) {
+document.getElementById(Output).innerHTML = 6;   
+} */
+            function changeBackgroundColor (){
+                 document.body.style.backgroundColor = "red";
+            }
+            /*fuction getInput(){
+                var userInputInches = } */
+   
+</script> 
+        <SCRIPT LANGUAGE="JavaScript">
+            function testResults (form) {
+                var TestVar = form.numPeople.value;
+                alert ("You typed: " + TestVar);
+            }
+        </SCRIPT>
 	</head>
-	<body>
-	<h1> Get Your Fair Share</h1>
-    <h1> Input parameters</h1>
-	
-<label> Radius</label>
-<div class="input-group">
-  <input type="text" class="form-control" placeholder="0.00" aria-describedby="basic-addon2">
-  <span class="input-group-addon" id="basic-addon2">inches</span>
-</div>
+    <body>
+        <h1> Get Your Fair Share</h1>
+        <h1> Input parameters</h1>
 
-<label> Width*</label>
-<div class="input-group">
-  <input type="text" class="form-control" placeholder="0.00" aria-describedby="basic-addon2">
-  <span class="input-group-addon" id="basic-addon2">inches</span>
-</div>
+        <form id = "form" method = "get" action="">	
+            <label> Radius</label>
+            <div class="input-group">
+              <input id = "radius" type="text" class="form-control" value="" placeholder="0.00" aria-describedby="basic-addon2">
+              <span class="input-group-addon" id="basic-addon2">inches</span>
+            </div>
 
-<label> Number of people </label>
-<div class="input-group">
-  <input type="text" class="form-control" placeholder="0" aria-describedby="basic-addon2">
-  <span class="input-group-addon" id="basic-addon2">people</span>
-</div>
-<div> *Only for slices.</div>
+            <label> Width*</label>
+            <div class="input-group">
+              <input id = "width" type="text" class="form-control" value="" placeholder="0.00" aria-describedby="basic-addon2">
+              <span class="input-group-addon" id="basic-addon2">inches</span>
+            </div>
+
+            <label> Number of people </label>
+            <div class="input-group">
+              <input id = "people" name ="numPeople" type="text" class="form-control" value="" placeholder="0" aria-describedby="basic-addon2">
+                <input type ="button" name ="button" value="click" 
+                       onClick = "testResults(this.form)">
+        
+              <span class="input-group-addon" id="basic-addon2">people</span>
+            </div>
+        </form>
+       
+        <FORM NAME="myform" ACTION="" METHOD="GET">
+            Enter something in the box: <BR>
+            <INPUT TYPE="text" NAME="inputbox" VALUE=""><P>
+            <INPUT TYPE="button" NAME="button" Value="Click" onClick="testResults(this.form)">
+        </FORM>
+                
+    <div> *Only for slices.</div>
+
+    <div id="Output"> </div>
+            <button onClick = "changeBackgroundColor()"> I work </button>
+        
 	</body>
 </html>
